@@ -5,15 +5,60 @@ A simple task management application built with Node.js, Express, and MongoDB.
 ## Getting Started
 
 1. Clone the repository
+```
+$ git clone
+
+```
 
 2. Install the dependencies
 
+```
+$ cd personal-blog
+
+$ npm install
+
+```
+
 3. Set the `MONGODB_URL` environment variable to your MongoDB Atlas connection string
-   export MONGODB_URL="mongodb+srv://<username>:<password>@cluster0.mongodb.net/task-manager?retryWrites=true&w=majority"
+```
+$ export MONGODB_URL="mongodb+srv://<username>:<password>@cluster0.mongodb.net/task-manager?retryWrites=true&w=majority"
+
+```
 
 4. Start the server
-   npm start
-   The server will start on port 5000 by default.
+```
+$ npm start
+
+```
+   
+The server will start on port 5000 by default.
+
+## File Structure
+```
+my-project/
+├── package.json
+├── index.js
+├── models/
+│ ├── task.js
+│ ├── user.js
+│ └── roles/
+│ ├── administrator.js
+│ ├── manager.js
+│ └── worker.js
+└── routes/
+├── index.js
+├── tasks.js
+└── users.js
+
+```
+###models: 
+This directory contains the Mongoose models for the different types of users and tasks in the application.
+
+###routes: 
+This directory contains the route files for the different types of users and tasks in the application.
+
+###index.js: This file sets up the express server and connects to the MongoDB Atlas database. It also sets up the routes for the different types of users and tasks in the application. Finally, it starts the server and listens for incoming requests.
+
 
 ## API Endpoints
 
@@ -48,23 +93,3 @@ A simple task management application built with Node.js, Express, and MongoDB.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-my-project/
-├── package.json
-├── index.js
-├── models/
-│ ├── task.js
-│ ├── user.js
-│ └── roles/
-│ ├── administrator.js
-│ ├── manager.js
-│ └── worker.js
-└── routes/
-├── index.js
-├── tasks.js
-└── users.js
-
-models: This directory contains the Mongoose models for the different types of users and tasks in the application.
-routes: This directory contains the route files for the different types of users and tasks in the application.
-index.js: This file sets up the express server and connects to the MongoDB Atlas database. It also sets up the routes for the different types of users and tasks in the application. Finally, it starts the server and listens for incoming requests.
-package.json: This file includes the dependencies and scripts for the application.
