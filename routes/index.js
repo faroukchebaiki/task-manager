@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Connect to the MongoDB Atlas database
-mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/task-manager?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://farouk:mohamed@cluster0.x3oyycz.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
