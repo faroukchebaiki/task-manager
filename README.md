@@ -51,14 +51,14 @@ my-project/
 └── users.js
 
 ```
-###models: 
+### models: 
 This directory contains the Mongoose models for the different types of users and tasks in the application.
 
-###routes: 
+### routes: 
 This directory contains the route files for the different types of users and tasks in the application.
 
-###index.js: This file sets up the express server and connects to the MongoDB Atlas database. It also sets up the routes for the different types of users and tasks in the application. Finally, it starts the server and listens for incoming requests.
-
+### index.js: 
+This file sets up the express server and connects to the MongoDB Atlas database. It also sets up the routes for the different types of users and tasks in the application. Finally, it starts the server and listens for incoming requests.
 
 ## API Endpoints
 
